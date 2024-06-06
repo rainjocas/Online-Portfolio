@@ -8,15 +8,8 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
-const navBoxStyle: React.CSSProperties = {
-  display: "flex",
-  alignItems: "center",
-  backgroundColor: ColorPalette.red,
-};
-
 function NavigationBar() {
   return (
-    <div style={navBoxStyle} className=" mr-2 overflow-hidden rounded-md">
       <Navbar expand="lg" className="bg-body-tertiary">
         <Container>
           <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
@@ -31,7 +24,6 @@ function NavigationBar() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </div>
   );
 }
 
