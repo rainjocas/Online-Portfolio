@@ -17,10 +17,10 @@ function NavigationBar() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="#home">Home</Nav.Link>
-            <Link to="/about">About</Link>
-            <Link to="/projects">Projects</Link>
-            <Link to="/resume">Resume</Link>
-            <Nav.Link href="#link">Link</Nav.Link>
+            <Link to="/about">About </Link>
+            <Link to="/projects">Projects </Link>
+            <Link to="/resume">Resume </Link>
+            <Nav.Link href="/about">Link</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
