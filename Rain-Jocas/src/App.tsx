@@ -14,7 +14,7 @@ import Projects from "./pages/Projects";
  */
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/home",
     element: <Home />,
   },
   {
