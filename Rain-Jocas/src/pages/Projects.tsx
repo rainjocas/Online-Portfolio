@@ -5,7 +5,7 @@ import {PageWrapper} from "../pageSections/PageWrapper";
 const Projects: React.FC = () => {
     return (
       <PageWrapper>
-          <p className="text-xl font-bold underline">
+          <p>
             Congratulations, you've reached the Projects page
           </p>
       </PageWrapper>

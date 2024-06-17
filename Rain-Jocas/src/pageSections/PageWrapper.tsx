@@ -21,7 +21,7 @@ export const PageWrapper: React.FC<WrapperProps> = ({
     return (
         <div>
             <NavigationBar />
-            <div id="page-content" className=" min-h-[100vh]">
+            <div id="page-content">
             {children}
             </div>
         </div>
