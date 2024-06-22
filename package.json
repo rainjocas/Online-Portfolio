@@ -4,5 +4,8 @@
     "react-bootstrap": "^2.10.2",
     "react-router-dom": "^6.23.1",
     "react-scripts": "^5.0.1"
+  },
+  "devDependencies": {
+    "web-vitals": "^4.2.0"
   }
 }
