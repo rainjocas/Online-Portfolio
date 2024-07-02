@@ -1,5 +1,6 @@
 import React from "react";
 import NavigationBar from "../components/NavigationBar";
+import { OffcanvasExample } from "../components/NavigationBar";
 
 /**
  * Wrapper Component Props
@@ -21,6 +22,7 @@ export const PageWrapper: React.FC<WrapperProps> = ({
     return (
         <div>
             <NavigationBar />
+            <OffcanvasExample />
             <div id="page-content">
             {children}
             </div>
