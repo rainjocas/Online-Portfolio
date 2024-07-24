@@ -1,12 +1,10 @@
 import React from "react";
-import NavigationBar from "../components/NavigationBar";
-import { OffcanvasExample } from "../components/NavigationBar";
+import NavigationBar, { SideBar } from "../components/NavigationBar";
 
 /**
  * Wrapper Component Props
  * @param children, the children of the component
  */
-
 type WrapperProps = {
     children: React.ReactNode[] | React.ReactNode;
 };
@@ -21,8 +19,7 @@ export const PageWrapper: React.FC<WrapperProps> = ({
     }) => {
     return (
         <div>
-            <NavigationBar />
-            <OffcanvasExample />
+            <SideBar />
             <div id="page-content">
             {children}
             </div>

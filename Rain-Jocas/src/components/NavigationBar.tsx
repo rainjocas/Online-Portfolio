@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 //import { Link } from "react-router-dom";
 // @ts-ignore
 //import logo from "../../logo.svg";
@@ -27,13 +27,13 @@ export function NavigationBar() {
   );
 }
 
-export function OffcanvasExample() {
+export function SideBar() {
   return (
     <>
-      {[false,'md'].map((expand) => (
+      {['md'].map((expand) => (
         <Navbar expand={expand} className="bg-body-tertiary mb-3">
           <Container fluid>
-            <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand>
+            <Navbar.Brand href="#">NAVLOGO HERE</Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -60,6 +60,5 @@ export function OffcanvasExample() {
     </>
   );
 }
-
 
 export default NavigationBar;
