@@ -1,6 +1,5 @@
 import React from "react";
 import NavigationBar from "../components/Navigation/NavigationBar";
-import {ColorPalette} from "../utils/themes"
 import useScreenType from "../utils/UseScreenType";
 import { Menu } from "../components/Navigation/NavigationBar";
 

@@ -3,12 +3,9 @@ import React, {useState} from "react";
 // @ts-ignore
 //import logo from "../../logo.svg";
 //import { ColorPalette } from "../utils/themes";
-import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import { ColorPalette } from "../../utils/themes";
 import SkipLink from './SkipLink';
 import { Link } from "react-router-dom";
 import HamburgerSVG from "../../assets/sidebar";
