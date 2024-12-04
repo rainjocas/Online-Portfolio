@@ -17,21 +17,24 @@ type JobProps = {
  * Used for the elements that are displayed on all pages,
  * updating here updates all pages at once
  */
-export const Job: React.FC<JobProps> = (props) => {
+// export const Job: React.FC<JobProps> = (props) => {
+//     return (
+const Job: React.FC<JobProps> = ({ 
+    title, company, startDate, endDate, description,
+}) => {
     return (
-        <div className="flex-wrap">
-            <div className="left">
-                <text style={{ fontWeight: 'bold' }}>{props.title}</text>
-                , {props.company}
+        <div className="pt-5">
+            <div className="flex flex-row justify-between px-5">
+                <div className="">
+                    <text style={{ fontWeight: 'bold' }}>{title}</text>
+                    , {company}
+                </div>
+                <div>
+                    {startDate} - {endDate}
+                </div>
             </div>
-            <div className="float-right">
-                {props.startDate} - {props.endDate}
-            </div>
-            hello world
-            <div className="flex flex-row">
-                <div>01</div>
-                <div>02</div>
-                <div>03</div>
+            <div className="px-10 pt-5">
+            {description}
             </div>
         </div>
     );
