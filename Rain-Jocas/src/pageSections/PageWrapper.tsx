@@ -1,5 +1,6 @@
 import React from "react";
 import NavigationBar, { SideBar } from "../components/NavigationBar";
+import {ColorPalette} from "../utils/themes"
 
 /**
  * Wrapper Component Props
@@ -22,6 +23,8 @@ export const PageWrapper: React.FC<WrapperProps> = ({
             <SideBar />
             <div id="page-content">
             {children}
+            iug;wrg;urqegub
+            libgrqiblr
             </div>
         </div>
     );

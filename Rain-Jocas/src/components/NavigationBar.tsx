@@ -8,6 +8,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { ColorPalette } from "../utils/themes";
 
 export function NavigationBar() {
   return (
@@ -29,9 +30,10 @@ export function NavigationBar() {
 
 export function SideBar() {
   return (
-    <>
+    <div className="bg-theme_jade">
+      <div className="bg-theme_blue">hello world</div>
       {['md'].map((expand) => (
-        <Navbar expand={expand} className="bg-body-tertiary mb-3">
+        <Navbar expand={expand} className="bg-body-tertiary mb-3 bg-theme_jade">
           <Container fluid>
             <Navbar.Brand href="#">Professional Photo Here</Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
@@ -56,7 +58,7 @@ export function SideBar() {
           </Container>
         </Navbar>
       ))}
-    </>
+    </div>
   );
 }
 
