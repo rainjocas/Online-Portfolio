@@ -33,7 +33,7 @@ export function SideBar() {
       {['md'].map((expand) => (
         <Navbar expand={expand} className="bg-body-tertiary mb-3">
           <Container fluid>
-            <Navbar.Brand href="#">NAVLOGO HERE</Navbar.Brand>
+            <Navbar.Brand href="#">Professional Photo Here</Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -47,10 +47,9 @@ export function SideBar() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Nav.Link href="/">Home</Nav.Link>
-                <Nav.Link href="/about">About</Nav.Link>
+                <Nav.Link href="/">About</Nav.Link>
+                <Nav.Link href="/experience">Experience</Nav.Link>
                 <Nav.Link href="/projects">Projects</Nav.Link>
-                <Nav.Link href="/resume">Resume</Nav.Link>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
