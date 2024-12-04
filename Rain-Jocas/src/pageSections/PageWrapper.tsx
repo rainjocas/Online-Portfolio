@@ -1,6 +1,8 @@
 import React from "react";
-import NavigationBar, { SideBar } from "../components/NavigationBar";
+import NavigationBar from "../components/Navigation/NavigationBar";
 import {ColorPalette} from "../utils/themes"
+import useScreenType from "../utils/UseScreenType";
+import { Menu } from "../components/Navigation/NavigationBar";
 
 /**
  * Wrapper Component Props
@@ -18,14 +20,25 @@ type WrapperProps = {
 export const PageWrapper: React.FC<WrapperProps> = ({
     children,
     }) => {
-    return (
-        <div>
-            <SideBar />
-            <div id="page-content">
-            {children}
-            iug;wrg;urqegub
-            libgrqiblr
+    const screenType = useScreenType();
+    if (screenType === "mobile"){
+        return (
+            <div>
+                <Menu />
+                <div id="page-content">
+                {children}
+                </div>
             </div>
-        </div>
-    );
+        );
+    }
+    else {
+        return (
+            <div>
+                <NavigationBar />
+                <div id="page-content">
+                {children}
+                </div>
+            </div>
+        );
+    }
 };

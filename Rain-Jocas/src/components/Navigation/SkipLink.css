@@ -1,0 +1,16 @@
+.SkipLink {
+    position: absolute;
+    left: -999px;
+    width: 1px;
+    height: 1px;
+    top: auto;
+}
+
+:active, .SkipLink:focus {
+    color: #000;
+    display: inline-block;
+    height: auto;
+    width: auto;
+    position: static;
+    margin: auto;
+}
