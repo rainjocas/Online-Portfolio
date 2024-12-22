@@ -20,7 +20,7 @@ export function NavigationBar() {
             <Navbar.Brand href="#">Professional Photo Here</Navbar.Brand>
           </Link>
           <Nav className= "flex flex-row items-center bg-theme_jade rounded-md absolute right-5" role="navigation">
-            <NavLink src = "/about">About</NavLink>
+            <NavLink src = "/">About</NavLink>
             <NavLink src = "/experience">Experience</NavLink>
             <NavLink src = "/projects">Projects</NavLink>
           </Nav>

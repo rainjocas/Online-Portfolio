@@ -5,7 +5,7 @@ import {PageWrapper} from "../pageSections/PageWrapper";
 const About: React.FC = () => {
     return (
       <PageWrapper>
-          <p>
+          <p className="py-5">
             Congratulations, you've reached the About page
           </p>
       </PageWrapper>
