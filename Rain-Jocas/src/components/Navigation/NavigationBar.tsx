@@ -9,7 +9,7 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import SkipLink from './SkipLink';
 import { Link } from "react-router-dom";
 import HamburgerSVG from "../../assets/sidebar";
-import NavLink from "./NavLink";
+import NavLink, { NavLinkMobile } from "./NavLink";
 
 export function NavigationBar() {
   return (
@@ -19,7 +19,7 @@ export function NavigationBar() {
           <Link className="no-underline absolute left-5" to="/">
             <Navbar.Brand href="#">Professional Photo Here</Navbar.Brand>
           </Link>
-          <Nav className= "flex flex-row items-center bg-theme_jade rounded-md absolute right-5" role="navigation">
+          <Nav className= "flex flex-row items-center bg-pine rounded-md absolute right-5" role="navigation">
             <NavLink src = "/">About</NavLink>
             <NavLink src = "/experience">Experience</NavLink>
             <NavLink src = "/projects">Projects</NavLink>
@@ -43,7 +43,7 @@ function SideBar({ name, ...props }) {
     <div role="banner">
     <SkipLink skipTo="#main"></SkipLink>
     <div className="flex flex-row justify-between">
-      <Link className="no-underline text-theme_darkGreen pl-5" to="/">
+      <Link className="no-underline text-darkGreen pl-5" to="/">
         <Navbar.Brand href="#">Professional Photo Here</Navbar.Brand>
       </Link>
       <div tabIndex={0} onKeyDown={toggleShow}>
@@ -52,15 +52,15 @@ function SideBar({ name, ...props }) {
     </div>
     <Offcanvas show={show} onHide={handleClose} {...props}> {/*responsive design can be removed if glitchy by deleting responsive = "md" */}
       <Offcanvas.Header closeButton className = "">
-        <NavLink src = "/">
+        <NavLinkMobile src = "/">
         <Navbar.Brand href="#">A Header image/text if I want one</Navbar.Brand>
-        </NavLink>
+        </NavLinkMobile>
       </Offcanvas.Header>
       <Offcanvas.Body role="navigation" className="align-center">
         <Nav className="justify-content-end flex-grow-1 pe-3 flex flex-col items-center">
-          <NavLink src={"/"}>About</NavLink>
-          <NavLink src={"/experience"}>Experience</NavLink>
-          <NavLink src={"/projects"}>Projects</NavLink>
+          <NavLinkMobile src={"/"}>About</NavLinkMobile>
+          <NavLinkMobile src={"/experience"}>Experience</NavLinkMobile>
+          <NavLinkMobile src={"/projects"}>Projects</NavLinkMobile>
         </Nav>
       </Offcanvas.Body>
     </Offcanvas>

@@ -1,4 +1,5 @@
 import * as React from "react";
+import { LeftBubble, RightBubble } from "./SideBubble";
 
 /**
  * Job Component Props
@@ -9,7 +10,7 @@ type JobProps = {
     company: string
     startDate: string
     endDate: string
-    description: string
+    description: any;
 };
 
 /**
@@ -23,18 +24,20 @@ const Job: React.FC<JobProps> = ({
     title, company, startDate, endDate, description,
 }) => {
     return (
-        <div className="pt-5">
-            <div className="flex flex-row justify-between px-5">
-                <div className="">
-                    <text style={{ fontWeight: 'bold' }}>{title}</text>
-                    , {company}
-                </div>
-                <div>
-                    {startDate} - {endDate}
-                </div>
+        <div className="pt-20">
+            <div className="flex flex-row justify-between">
+                <LeftBubble>
+                    <text className="font-bold text-lightBlue">{title},</text>
+                    <div className = "px-1"></div>
+                    <text className="text-lightBlue content-center">{company}</text>
+                </LeftBubble>
+                <div className = "px-3"></div>
+                <RightBubble>
+                    <text className="text-lightBlue">{startDate} - {endDate}</text>
+                </RightBubble>
             </div>
             <div className="px-10 pt-5">
-            {description}
+                {description}
             </div>
         </div>
     );

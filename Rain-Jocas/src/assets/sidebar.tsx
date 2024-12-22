@@ -18,7 +18,7 @@ interface MySVGProps {
 const HamburgerSVG: React.FC<MySVGProps> = ({ className, onClick, onKeyDown}) => (
     <svg 
         xmlns="http://www.w3.org/2000/svg" 
-        fill="2E6F40" 
+        fill="1A7260" 
         viewBox="0 0 24 24" 
         stroke-width="1.5" 
         stroke="#2E6F40" 
