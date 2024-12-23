@@ -45,8 +45,9 @@ type bubbleProps = {
   }
 
   /**
-   * LeftBubble component:
-   * Displays a colored ovular that juts off to the left side, and contains information inside
+   * LeftUpBubble component:
+   * Displays a colored ovular that juts off to the left side, and contains information inside,
+   * text is arranged flex-col rather than flex-row
    * @param children
    */
   export const LeftUpBubble: React.FC<bubbleProps> = ({
@@ -61,3 +62,22 @@ type bubbleProps = {
         </div> 
     );
   }
+
+    /**
+   * RightUpBubble component:
+   * Displays a colored ovular that juts off to the right side, and contains information inside,
+   * text is arranged flex-col rather than flex-row
+   * @param children
+   */
+    export const RightUpBubble: React.FC<bubbleProps> = ({
+      children }) => {
+      return (
+          <div className="py-2 left-0 px-2 h-25 rounded-l-full transform translate-x-0.5 bg-theme_blue"
+            style={{
+              backgroundSize: "contain",
+              boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+            }}>
+              {children}
+          </div> 
+      );
+    }
