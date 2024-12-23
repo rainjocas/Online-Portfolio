@@ -7,6 +7,7 @@ import { SVGProps } from "react";
  */
 const Github = (props: SVGProps<SVGSVGElement>) => (
     <svg
+        aria-label="Github Logo"
         version="1.0"
         xmlns="http://www.w3.org/2000/svg"
         width="50"

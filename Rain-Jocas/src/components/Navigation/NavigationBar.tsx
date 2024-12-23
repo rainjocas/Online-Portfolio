@@ -10,14 +10,16 @@ import SkipLink from './SkipLink';
 import { Link } from "react-router-dom";
 import HamburgerSVG from "../../assets/sidebar";
 import NavLink, { NavLinkMobile } from "./NavLink";
+import Home from "../../assets/Home"
 
 export function NavigationBar() {
   return (
     <nav className="flex items-center sticky top-0 py-2 z-20 bg-theme_lightGreen backdrop-filter backdrop-blur-lg bg-opacity-30">
-      <Navbar fixed= "top" expand="lg" className="bg-body-tertiary">
+      <SkipLink skipTo="#main"></SkipLink>
+      <Navbar tabIndex={0} fixed= "top" expand="lg" className="bg-body-tertiary">
         <div className="flex flex-row justify-between place-content-between">
           <Link className="no-underline absolute left-5" to="/">
-            <Navbar.Brand href="#">Professional Photo Here</Navbar.Brand>
+            <a href = "/" target = "_target"><Home/></a>
           </Link>
           <Nav className= "flex flex-row items-center bg-pine rounded-md absolute right-5" role="navigation">
             <NavLink src = "/">About</NavLink>
@@ -42,13 +44,13 @@ function SideBar({ name, ...props }) {
   return (
     <div role="banner">
     <SkipLink skipTo="#main"></SkipLink>
-    <div className="flex flex-row justify-between">
+    <div className="flex flex-row justify-between py-2">
       <Link className="no-underline text-darkGreen pl-5" to="/">
-        <Navbar.Brand href="#">Professional Photo Here</Navbar.Brand>
+        <a href = "/" target = "_target"><Home/></a>
       </Link>
-      <div tabIndex={0} onKeyDown={toggleShow}>
+        <nav tabIndex={0} onKeyDown={toggleShow} className="focus-visible:ring"> 
         <HamburgerSVG className="w-[40px] h-[40px] mr-[10px]" onClick={toggleShow} onKeyDown={toggleShow} />
-      </div>
+      </nav>
     </div>
     <Offcanvas show={show} onHide={handleClose} {...props}> {/*responsive design can be removed if glitchy by deleting responsive = "md" */}
       <Offcanvas.Header closeButton className = "">
@@ -56,12 +58,10 @@ function SideBar({ name, ...props }) {
         <Navbar.Brand href="#">A Header image/text if I want one</Navbar.Brand>
         </NavLinkMobile>
       </Offcanvas.Header>
-      <Offcanvas.Body role="navigation" className="align-center">
-        <Nav className="justify-content-end flex-grow-1 pe-3 flex flex-col items-center">
-          <NavLinkMobile src={"/"}>About</NavLinkMobile>
-          <NavLinkMobile src={"/experience"}>Experience</NavLinkMobile>
-          <NavLinkMobile src={"/projects"}>Projects</NavLinkMobile>
-        </Nav>
+      <Offcanvas.Body role="navigation" className="align-center justify-content-start flex-grow-1 pe-3 flex flex-col items-center">
+        <NavLinkMobile src={"/"}>About</NavLinkMobile>
+        <NavLinkMobile src={"/experience"}>Experience</NavLinkMobile>
+        <NavLinkMobile src={"/projects"}>Projects</NavLinkMobile>
       </Offcanvas.Body>
     </Offcanvas>
   </div>

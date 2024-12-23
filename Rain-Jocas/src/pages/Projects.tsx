@@ -50,33 +50,35 @@ const coinGameDescription = (
 const Projects: React.FC = () => {
     return (
       <PageWrapper>
-        <div className="pt-20 pr-12">
-          <LeftUpBubble>
-          <h2 className="text-2xl text-lightBlue">Unsupervised Machine Learning</h2>
-          <h3 className="text-lg text-lightBlue">A comparative analysis of K-Means and DBSCAN clustering algorithms</h3>
-          </LeftUpBubble>
-        </div>
-          {aiProjectDescription}
-        <div className="flex flex-row justify-center space-x-10 py-5">
-          <Button src={Clustering} target={"_blank"}>Code Deliverables</Button>
-          <Button src={WriteUp} target={"_blank"}>Project Write Up</Button>
-        </div>
-        <div className="pt-10 pl-12">
-          <RightUpBubble>
-            <h2 className="text-2xl text-lightBlue">Text Generator</h2>
-            <h3 className="text-lg text-lightBlue">Probability Based Character Generation</h3>
-          </RightUpBubble>
-        </div>
-        {wordGenDescription}
-        <Button src={textGeneration} target={"_blank"}>Code Deliverables</Button>
-        <div className="pt-10 pr-12">
-          <LeftUpBubble>
-            <h2 className="text-2xl text-lightBlue h-16 content-center">Coinstrip Game</h2>
-          </LeftUpBubble>
-        </div>
-        {coinGameDescription}
-        <Button src={coinGame} target={"_blank"}>Code Deliverables</Button>
-        <div className="pt-20"></div>
+        <main>
+          <div className="pt-20 pr-12">
+            <LeftUpBubble>
+            <h2 className="text-2xl text-lightBlue">Unsupervised Machine Learning</h2>
+            <h3 className="text-lg text-lightBlue">A comparative analysis of K-Means and DBSCAN clustering algorithms</h3>
+            </LeftUpBubble>
+          </div>
+            {aiProjectDescription}
+          <div className="flex flex-row justify-center space-x-10 py-5">
+            <Button src={Clustering} target={"_blank"}>Code Deliverables</Button>
+            <Button src={WriteUp} target={"_blank"}>Project Write Up</Button>
+          </div>
+          <div className="pt-10 pl-12">
+            <RightUpBubble>
+              <h2 className="text-2xl text-lightBlue">Text Generator</h2>
+              <h3 className="text-lg text-lightBlue">Probability Based Character Generation</h3>
+            </RightUpBubble>
+          </div>
+          {wordGenDescription}
+          <Button src={textGeneration} target={"_blank"}>Code Deliverables</Button>
+          <div className="pt-10 pr-12">
+            <LeftUpBubble>
+              <h2 className="text-2xl text-lightBlue h-16 content-center">Coinstrip Game</h2>
+            </LeftUpBubble>
+          </div>
+          {coinGameDescription}
+          <Button src={coinGame} target={"_blank"}>Code Deliverables</Button>
+          <div className="pt-20"></div>
+        </main>
       </PageWrapper>
     );
   };

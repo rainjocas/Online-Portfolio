@@ -17,6 +17,7 @@ interface MySVGProps {
 
 const HamburgerSVG: React.FC<MySVGProps> = ({ className, onClick, onKeyDown}) => (
     <svg 
+        aria-label="Sidebar Button"
         xmlns="http://www.w3.org/2000/svg" 
         fill="1A7260" 
         viewBox="0 0 24 24" 
