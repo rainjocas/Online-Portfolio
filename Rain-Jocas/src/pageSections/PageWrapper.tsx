@@ -2,8 +2,6 @@ import React from "react";
 import NavigationBar from "../components/Navigation/NavigationBar";
 import useScreenType from "../utils/UseScreenType";
 import { Menu } from "../components/Navigation/NavigationBar";
-import Linkedin from "../assets/LinkedIn";
-import Github from "../assets/Github";
 import { Footer } from "./Footer";
 import SkipLink from "../components/Navigation/SkipLink";
 

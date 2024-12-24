@@ -1,18 +1,7 @@
 import React from "react";
-import NavigationBar from "../components/Navigation/NavigationBar";
-import useScreenType from "../utils/UseScreenType";
-import { Menu } from "../components/Navigation/NavigationBar";
 import Linkedin from "../assets/LinkedIn";
 import Github from "../assets/Github";
-import l from "../assets/LinkedInLogo.svg"
 
-/**
- * Wrapper Component Props
- * @param children, the children of the component
- */
-type WrapperProps = {
-    children: React.ReactNode[] | React.ReactNode;
-};
 
 export const Footer = (
     <div className="bg-pine h-60 flex flex-col place-items-center">
