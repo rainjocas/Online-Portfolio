@@ -5,6 +5,7 @@ import { Menu } from "../components/Navigation/NavigationBar";
 import Linkedin from "../assets/LinkedIn";
 import Github from "../assets/Github";
 import { Footer } from "./Footer";
+import SkipLink from "../components/Navigation/SkipLink";
 
 /**
  * Wrapper Component Props
@@ -25,7 +26,8 @@ export const PageWrapper: React.FC<WrapperProps> = ({
     const screenType = useScreenType();
     if (screenType === "mobile"){
         return (
-            <div>
+            <div tabIndex={0} role="document">
+                <SkipLink skipTo={"#main"}></SkipLink>
                 <Menu />
                 <div id="page-content">
                 {children}

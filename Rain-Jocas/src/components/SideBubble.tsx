@@ -15,7 +15,7 @@ type bubbleProps = {
   export const LeftBubble: React.FC<bubbleProps> = ({
     children }) => {
     return (
-        <div className="py-2 flex flex-row left-0 px-2 rounded-r-full transform -translate-x-0.5 bg-theme_blue"
+        <div className="py-2 flex flex-row left-0 px-2 max-w-2/3 rounded-r-full transform -translate-x-0.5 bg-theme_blue"
           style={{
             backgroundSize: "contain",
             boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
@@ -34,7 +34,7 @@ type bubbleProps = {
   export var RightBubble: React.FC<bubbleProps> = ({
     children }) => {
     return (
-        <div className="py-2 flex flex-row right-0 px-2 rounded-l-full transform translate-x-0.5 bg-theme_blue"
+        <div className="py-2 flex flex-row right-0 px-2 rounded-l-full max-w-1/3 transform translate-x-0.5 bg-theme_blue"
           style={{
             backgroundSize: "contain",
             boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",

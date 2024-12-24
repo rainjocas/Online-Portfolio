@@ -2,13 +2,13 @@ import React from "react";
 import {PageWrapper} from "../pageSections/PageWrapper";
 //import {Section} from "../pageSections/Section";
 
-const titleBubbleClass= "text-2xl px-4 text-lightBlue bg-theme_blue align-center w-full max-w-fit rounded-full"
+const titleBubbleClass= "text-2xl px-4 text-paleBlue bg-theme_blue align-center w-full max-w-fit rounded-full"
 
 const About: React.FC = () => {
     return (
       <PageWrapper>
         <main className="pt-20 flex flex-col place-items-center">
-          <h1 className = "pb-10 text-richBl">Rain Jocas</h1>
+          <h1 className = "pb-10 text-blueBlack">Rain Jocas</h1>
           [INSERT PHOTO]
           <h2 className = {titleBubbleClass}>About</h2>
             <p className="py-4 px-5 text-blueBlack text-lg">

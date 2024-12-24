@@ -12,7 +12,7 @@ interface SkipLinkProps {
       <a
         href={props.skipTo}
         aria-label="skip-to-main-content-link"
-        className="focus-visible:ring"
+        className=""
         style={{
           position: "absolute",
           left: "-999px",
