@@ -17,9 +17,9 @@ export const Footer = (
         </div>
         <div className="flex flex-row">
             <nav className="flex justify-center items-center">
-                <a href = "https://www.linkedin.com/in/rain-jocas-34866a262/" target= "_blank"><Linkedin/></a>
+                <a href = "https://www.linkedin.com/in/rain-jocas-34866a262/" target= " "><Linkedin/></a>
                 <div className="px-2"></div>
-                <a href="https://github.com/rainjocas" target= "_blank"><Github/></a>
+                <a href="https://github.com/rainjocas" target= " "><Github/></a>
             </nav>
         </div>
     </div>
