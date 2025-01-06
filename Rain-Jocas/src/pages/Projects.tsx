@@ -52,7 +52,7 @@ const Projects: React.FC = () => {
         <main>
           <div className="pt-20 pr-12">
             <LeftUpBubble>
-            <h2 className="text-2xl text-paleBlue">Unsupervised Machine Learning</h2>
+            <h2 className="text-2xl text-paleBlue">Unsupervised Machine Learning   RJ</h2>
             <h3 className="text-lg text-paleBlue">A comparative analysis of K-Means and DBSCAN clustering algorithms</h3>
             </LeftUpBubble>
           </div>

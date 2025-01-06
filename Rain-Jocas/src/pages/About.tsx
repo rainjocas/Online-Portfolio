@@ -9,7 +9,6 @@ const About: React.FC = () => {
       <PageWrapper>
         <main className="pt-20 flex flex-col place-items-center">
           <h1 className = "pb-10 text-blueBlack">Rain Jocas</h1>
-          [INSERT PHOTO]
           <h2 className = {titleBubbleClass}>About</h2>
             <p className="py-4 px-5 text-blueBlack text-lg">
               I am a current Junior at Bowdoin College, majoring in Computer Science. I'm an aspiring
