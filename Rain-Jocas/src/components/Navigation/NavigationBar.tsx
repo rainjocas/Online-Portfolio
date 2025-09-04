@@ -9,7 +9,7 @@ import Home from "../../assets/Home"
 
 export function NavigationBar() {
   return (
-    <nav className="flex items-center sticky top-0 py-2 z-20 bg-theme_lightGreen backdrop-filter backdrop-blur-lg bg-opacity-30">
+    <nav className="flex items-center sticky top-0 py-2 z-20 bg-theme_orange backdrop-filter backdrop-blur-lg bg-opacity-30">
       <Navbar tabIndex={0} fixed= "top" expand="lg" className="bg-body-tertiary">
         <div className="flex flex-row justify-between place-content-between">
           <Link className="no-underline absolute pl-3" to="/">

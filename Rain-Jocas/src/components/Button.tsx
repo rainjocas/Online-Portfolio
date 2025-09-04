@@ -21,7 +21,7 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
     return (
         <a href = {src}
-        className="no-underline bg-violet text-palePurple font-bold py-2 px-2 rounded-lg transition duration-300 ease-in-out hover:bg-theme_pink hover:text-darkPurple transition-colors focus-visible:ring"
+        className="no-underline bg-orange text-white font-bold py-2 px-2 rounded-lg transition duration-300 ease-in-out hover:bg-pale_orange hover:text-black transition-colors focus-visible:ring"
         target = {target}>{children}</a>
     );
 }

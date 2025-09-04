@@ -52,8 +52,8 @@ const Projects: React.FC = () => {
         <main>
           <div className="pt-20 pr-12">
             <LeftUpBubble>
-            <h2 className="text-2xl text-paleBlue">Unsupervised Machine Learning   RJ</h2>
-            <h3 className="text-lg text-paleBlue">A comparative analysis of K-Means and DBSCAN clustering algorithms</h3>
+            <h2 className="text-2xl text-offWhite">Unsupervised Machine Learning   RJ</h2>
+            <h3 className="text-lg text-offWhite">A comparative analysis of K-Means and DBSCAN clustering algorithms</h3>
             </LeftUpBubble>
           </div>
             {aiProjectDescription}
@@ -63,15 +63,15 @@ const Projects: React.FC = () => {
           </div>
           <div className="pt-10 pl-12">
             <RightUpBubble>
-              <h2 className="text-2xl text-paleBlue">Text Generator</h2>
-              <h3 className="text-lg text-paleBlue">Probability Based Character Generation</h3>
+              <h2 className="text-2xl text-offWhite">Text Generator</h2>
+              <h3 className="text-lg text-offWhite">Probability Based Character Generation</h3>
             </RightUpBubble>
           </div>
           {wordGenDescription}
           <Button src={textGeneration} target={"_blank"}>Code Deliverables</Button>
           <div className="pt-10 pr-12">
             <LeftUpBubble>
-              <h2 className="text-2xl text-paleBlue h-16 content-center">Coinstrip Game</h2>
+              <h2 className="text-2xl text-offWhite h-16 content-center">Coinstrip Game</h2>
             </LeftUpBubble>
           </div>
           {coinGameDescription}

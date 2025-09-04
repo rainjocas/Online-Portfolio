@@ -22,7 +22,7 @@ const HamburgerSVG: React.FC<MySVGProps> = ({ className, onClick, onKeyDown}) =>
         fill="1A7260" 
         viewBox="0 0 24 24" 
         stroke-width="1.5" 
-        stroke="#2E6F40" 
+        stroke="#585123" 
         className={className}
         onClick={onClick} // Pass onClick handler to svg element
         onKeyDown={onKeyDown} // Pass onKeyDown handler to svg element

@@ -27,13 +27,13 @@ const Job: React.FC<JobProps> = ({
         <div className="pt-20">
             <div className="flex flex-row justify-between">
                 <LeftBubble>
-                    <h2 className="font-bold text-paleBlue text-2xl">{title},</h2>
+                    <h2 className="font-bold text-offWhite text-2xl">{title},</h2>
                     <div className = "px-1"></div>
-                    <text className="text-paleBlue content-center text-xl">{company}</text>
+                    <text className="text-offWhite content-center text-xl">{company}</text>
                 </LeftBubble>
                 <div className = "px-2"></div>
                 <RightBubble>
-                    <text className="text-paleBlue text-lg">{startDate} - {endDate}</text>
+                    <text className="text-offWhite text-lg">{startDate} - {endDate}</text>
                 </RightBubble>
             </div>
             <div className="px-10 pt-5">

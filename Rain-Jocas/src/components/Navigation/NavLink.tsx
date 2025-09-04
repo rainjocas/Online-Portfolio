@@ -18,7 +18,7 @@ const NavLink: React.FC<NavLinkProps> = ({
     src, children,
 }) => {
     return (
-        <a href = {src} className="no-underline text-offWhite font-bold h-10 pt-2 -py-2 px-4 rounded-lg transition duration-300 ease-in-out hover:bg-lightGreen hover:animate-pulse hover:text-darkPurple transition-colors focus-visible:ring">{children}</a>
+        <a href = {src} className="no-underline text-offWhite font-bold h-10 pt-2 -py-2 px-4 rounded-lg transition duration-300 ease-in-out hover:bg-yellow hover:animate-pulse hover:text-pine transition-colors focus-visible:ring">{children}</a>
     );
 }
 
