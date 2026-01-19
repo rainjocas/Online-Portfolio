@@ -7,6 +7,10 @@ import textGeneration from "../assets/Clustering.zip";
 import coinGame from "../assets/CoinGame.zip"
 import { LeftUpBubble, RightUpBubble } from "../components/SideBubble";
 
+const costumeDesignGithub = "https://github.com/rainjocas/costume-design"
+
+const costumeDesignLink = "https://costumedesign2025.com/x"
+
 const aiProjectDescription = (
   <>
   <p className="px-5 py-4 text-blueBlack text-lg">
@@ -52,31 +56,45 @@ const Projects: React.FC = () => {
         <main>
           <div className="pt-20 pr-12">
             <LeftUpBubble>
-            <h2 className="text-2xl text-offWhite">Unsupervised Machine Learning   RJ</h2>
-            <h3 className="text-lg text-offWhite">A comparative analysis of K-Means and DBSCAN clustering algorithms</h3>
+            <h2 className="text-2xl text-offWhite">Costume Design Portfolio Website</h2>
+            <h3 className="text-lg text-offWhite">A digital collection of Student Portfolios</h3>
             </LeftUpBubble>
           </div>
             {aiProjectDescription}
           <div className="flex flex-row justify-center space-x-10 py-5">
-            <Button src={Clustering} target={"_blank"}>Code Deliverables</Button>
-            <Button src={WriteUp} target={"_blank"}>Project Write Up</Button>
+            <Button src={costumeDesignGithub} target={"_blank"}>View Github</Button>
+            <Button src={costumeDesignLink} target={"_blank"}>View Website</Button>
           </div>
           <div className="pt-10 pl-12">
             <RightUpBubble>
-              <h2 className="text-2xl text-offWhite">Text Generator</h2>
-              <h3 className="text-lg text-offWhite">Probability Based Character Generation</h3>
+            <h2 className="text-2xl text-offWhite">Unsupervised Machine Learning</h2>
+            <h3 className="text-lg text-offWhite">A comparative analysis of K-Means and DBSCAN clustering algorithms</h3>
             </RightUpBubble>
           </div>
-          {wordGenDescription}
-          <Button src={textGeneration} target={"_blank"}>Code Deliverables</Button>
+            {aiProjectDescription}
+          <div className="flex flex-row justify-center space-x-10 py-5">
+            <Button src={Clustering} target={"_blank"}>View Code</Button>
+            <Button src={WriteUp} target={"_blank"}>View Research Paper</Button>
+          </div>
           <div className="pt-10 pr-12">
             <LeftUpBubble>
-              <h2 className="text-2xl text-offWhite h-16 content-center">Coinstrip Game</h2>
+              <h2 className="text-2xl text-offWhite">Text Generator</h2>
+              <h3 className="text-lg text-offWhite">Probability Based Character Generation</h3>
             </LeftUpBubble>
           </div>
+          {wordGenDescription}
+          <div className="space-x-10">
+            <Button src={textGeneration} target={"_blank"}>View Code</Button>
+          </div>
+          <div className="pt-10 pl-12">
+            <RightUpBubble>
+              <h2 className="text-2xl text-offWhite h-16 content-center">Coinstrip Game</h2>
+            </RightUpBubble>
+          </div>
           {coinGameDescription}
-          <Button src={coinGame} target={"_blank"}>Code Deliverables</Button>
-          <div className="pt-20"></div>
+          <div className="space-x-10 pb-10">
+            <Button src={coinGame} target={"_blank"}>View Code</Button>
+          </div>
         </main>
       </PageWrapper>
     );

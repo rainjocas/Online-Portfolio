@@ -1,19 +1,23 @@
 import React from "react";
 
+export const webDesignDeveloper = (
+    <div>
+        <p className="text-blueBlack text-lg">
+            I spent the summer working on MaineTransNet's website. This included updating content, consolidating
+            information, and improving the website's overall usability and accessibility. I also helped with
+            updating the websited according to the new brand guidelines which were implemented that summer.
+        </p>
+    </div>
+)
+
 export const techFellow = (
     <div>
-        <p className="text-blueBlack text-lg">My internship with FLIP National was twofold. I worked on maintaining and updating the old website,
-        as well as also building a new website from scratch using React. While my team and I built out the new
-        website, I personally took on the responisbility of maintaining the old website as well. The old website
-        hadn't been updated for 6 years, so maintenance was long overdue. While my team and I built out the new
-        website, I personally took on the responisbility of maintaining the old website as well. I brought the
-        content up to date, fixed up old code, and drastically improved the website speed. This work proved
-        essential as the new website has not yet launched due to some content we are still waiting on.</p>
-        <p className="text-blueBlack text-lg">For the new website, I led code development with an emphasis on digital accesibilty. I built out
-        major components, such as the sidebar navigation on mobile, an interactive map, and search
-        functionality within the website. I also built out important pages, such as the landing page, the
-        FLIP National Chapters page, a page for the FLIP Side Podcast, and all of the pages for each FLIP
-        National Chapter.</p>   
+        <p className="text-blueBlack text-lg"> 
+            I helped to build out a new website for FLIP National using React and Tailwind. This included
+            building out reusable components, content, and pages. Meanwhile, I maintained the legacy site,
+            updating content, fixing bugs, and improving website speed. I personally spearheaded our digital
+            accessibility initiative, ensuring that the new website met the WGAC accessibility standards.
+        </p> 
     </div>
 )
 
@@ -37,10 +41,17 @@ export const library = (
 
 export const jobsList = [
     {
+        title: "Web Design/Developer",
+        company: "MaineTransNet",
+        startDate: "May 2025",
+        endDate: "August 2025",
+        description: {webDesignDeveloper}
+    },
+    {
         title: "Technology Intern",
         company: "FLIP National",
         startDate: "May 2024",
-        endDate: "August 2024",
+        endDate: "January 2025",
         description: {techFellow}
     },
     {
